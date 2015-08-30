@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initail-scale=1">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700,300">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   <title>Test</title>
   <style type="text/css" media="all">
   body {
-  background-color:#efefef;
+  background-color:#fff;
   font-size:100%;
+  font-family: Roboto:300;
   }
   .logo {
     position:absolute;
@@ -98,7 +101,7 @@
 <div data-role="header">
 </div><!--// header-->
 <div data-role="content">
-  <div class="logo"><img src="images/ttl_2.png" width="187" height="89" alt=""></div>
+  <div class="logo"><img src="img/ttl_2.png" width="187" height="89" alt=""></div>
   <div class="count">
     <br />
     <br />
@@ -166,7 +169,10 @@ if (!empty($_REQUEST['希望枚数'])) {
 }
 
 if ($name && $age && $postCode && $address && $phone && $email && $num_sheet) {
+  echo '<p><br /></p>';
+  echo '<p><br /></p>';
   echo '<p class="T2"><strong>' . $name . '</strong>様、<br />お申し込みありがとうございます。</p><br />';
+  echo '<p class="T2">ご記入になったチケットプレゼント応募申し込みは送信されました。当選者の発表は賞品の発送をもって代えさせていただきます。</p>';
   ini_set("mbstring.internal_encoding", "UTF-8");
 
 
@@ -196,8 +202,20 @@ $message .= "添付ファイル送信のテストです。\n" . PHP_EOL;
 // 添付ファイル
 
 $cr = "\n";
-$data = "Item" . ", " . "data" . $cr;
-$data .= "氏名" . ", " . $name . $cr;
+$data = "項目" . ", " . "データ" . $cr;
+$data .= "お名前" . ", " . $name . $cr;
+$data .= "年 齢" . ", " . $age . $cr;
+$data .= "郵便番号" . ", " . $postCode . $cr;
+$data .= "住 所" . ", " . $address . $cr;
+$data .= "電話番号" . ", " . $phone . $cr;
+$data .= "メールアドレス" . ", " . $email . $cr;
+$data .= "希望枚数" . ", " . $num_sheet . $cr;
+$data .= "希望者名1" . ", " . $_REQUEST["希望者名1"] . $cr;
+$data .= "希望者名1年齢" . ", " . $_REQUEST["希望者名1年齢"] . $cr;
+$data .= "希望者名2" . ", " . $_REQUEST["希望者名1"] . $cr;
+$data .= "希望者名1年齢" . ", " . $_REQUEST["希望者名1年齢"] . $cr;
+
+
 $fp = fopen('form_sub.csv', 'a');
 fwrite($fp,$data);
 fclose($fp);
@@ -244,9 +262,10 @@ $message .= "--{$mime_boundary}--\n";
 
 
 if (mail($toMail, $mySbj, $message, $header)) {
-  echo 'メールが送信されました';
+  echo '';
+
 } else {
-  echo 'メールの送信に失敗しました';
+  echo 'メール失敗しました';
 }
 
 } else {
