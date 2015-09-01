@@ -155,6 +155,7 @@ if (!empty($_REQUEST['メールアドレス'])) {
 } else {
   $email = NULL;
   echo '<p class="error">「E-mail」必須項目を記入してください。</p>';
+  echo '<div class="back"><a href="javascript:history.back();" class="btn btn-primary" role="button">戻る</a> </div>'
 }
 
 // Validate the 希望枚数
@@ -203,13 +204,13 @@ $head = "From: " . $myName . "<" . $myMail . ">" . "\r\n";
 
 
 if (mb_send_mail($email, $mySbj, $body2, $head)){
-  echo "自動送信メール成功しました";
+  echo "";
 } else {
   echo "自動送信メール失敗しました";
 }
 } else {
    echo '<p class="error">必須項目に記入もれがあります。確認してもう一度送信してください。</p>';
-  echo '<div class="text-center"><a href="javascript:history.back();" class="btn btn-primary" role="button">戻る</a> </div>';
+  ;
 }
 
 

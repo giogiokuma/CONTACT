@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initail-scale=1">
+  <meta name="keywords" content="ザスパクサツ群馬,ジュビロ磐田,自由席チケット プレゼント, サッカー, 上毛新聞社, 正田醤油スタジアム">
+　<meta name="description" content="ザスパクサツ群馬 vs ジュビロ磐田　自由席チケットプレゼントします。">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700,300">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-  <title>Test</title>
+  <title>ザスパクサツ群馬 vs ジュビロ磐田　自由席チケットプレゼント</title>
   <style type="text/css" media="all">
   body {
   background-color:#fff;
@@ -163,7 +165,7 @@ $mySbj = mb_encode_mimeheader("ザスパクサツ群馬 VS ジュビロ磐田チ
 $myName = mb_encode_mimeheader($name);
 
 // 宛先メールアドレス
-$toMail = "ohata@raijin.com";
+$toMail = "mhatori@raijin.com";
 
 // 宛先会社名 internal_encodingからmbstring.languageで設定した文字コードへ変換
 $toName = mb_encode_mimeheader("上毛新聞社");
@@ -249,13 +251,14 @@ if (mail($toMail, $mySbj, $message, $header)) {
 }
 
 } else {
-  '<p class="error">必須項目に記入もれがあります。確認してもう一度送信してください。</p>';
+  echo '<p class="error">必須項目に記入もれがあります。確認してもう一度送信してください。</p>';
+  echo '<div class="text-center"><a href="javascript:history.back();" class="btn btn-primary" role="button">戻る</a> </div>';
 }
  ?>
 
  <br />
-<span class="back">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javaScript:history.back();">&raquo;１つ前へ戻る</a></span>
-<br /><br /> 
+<!--<span class="back">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javaScript:history.back();">&raquo;１つ前へ戻る</a></span>
+<br /><br /> -->
 
 </div><!--row-->
 </div><!--container-->
