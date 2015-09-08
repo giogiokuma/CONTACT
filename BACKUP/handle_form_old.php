@@ -9,73 +9,7 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700,300">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   <title>ザスパクサツ群馬 vs ジュビロ磐田　自由席チケットプレゼント</title>
-  <style type="text/css" media="all">
-  body {
-  background-color:#fff;
-  font-size:100%;
-  font-family: Roboto:300;
-  }
-  .errorT1 {
-    margin-left:100px;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 60px;
-    line-height: 150%;
-    border:1px solid #999;
-    text-align: left;
-    width:70%;
-    color:#ff0000;
-    font-weight:bold;
-    background-color:#fff;
-  }
-
-  .error {
-    color:#ff0000;
-  }
-
-  .T2 {
-    font-size:120%;
-    font-weight:bold;
-    color:#ff0000;
-  }
-  .T3 {
-    font-size:120%;
-  }
-  .T3 a:link, .T3 a:visited {
-    font-size:150%;
-    color:#333399;
-  }
-  .back {
-    color:#333399;
-    font-size:100%;
-    text-align: right;
-    padding-right:20px;
-    padding-bottom: 30px;
-    float:right;
-  }
-
-  .back a:link, a:visited {
-    color:#333399;
-    text-decoration: none;
-    font-size:100%;
-    text-align: right;
-    padding-right: 20px;
-    padding-bottom: 30px;
-  }
-
-  .back a:hover{
-    text-decoration: underline;
-    color:#70abf9;
-  }
-  .top_img img {
-    float:left;
-    width:100%;
-    height:auto;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
 </head>
 <body>
 <div class="top_img">

@@ -1,0 +1,9 @@
+order deny,allow
+deny from all
+allow from 218.45.52.6
+allow from 202.215.145.198
+allow from 180.50.158.130
+allow from 121.105.132.71
+allow from 61.215.84.250
+allow from nm.jomo-news.co.jp
+

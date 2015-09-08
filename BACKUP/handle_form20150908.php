@@ -62,7 +62,7 @@ body {
 <div style="max-width:500px;margin:0 auto;padding:0 5px;">
 
 <div class="top_img">
-<img src="img/logo2.gif" class="img-responsive" alt="">
+<img src="img/logo.gif" class="img-responsive" alt="">
 </div>
 
 <div class="container">

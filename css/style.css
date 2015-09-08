@@ -1,0 +1,14 @@
+<style type="text/css">
+body {
+  background-color:#fff;
+  font-size:110%;
+  font-family: Roboto:300;
+  }
+   .required {
+  color:red;
+}
+  .top_img img {
+    width:100%;
+    height:auto;
+  }
+</style>
